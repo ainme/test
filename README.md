@@ -1,7 +1,8 @@
 ### Quicker way to do it?
 
 Sometimes it happens that when you try to run composer on VPS's it kills the process.
-This is because not having enough RAM for the process. You can fix this using swap.
+This is because not having enough RAM for the process. 
+You can fix this using swap.
 Here is how to achieve that very easily.
 
 ```zsh
@@ -20,6 +21,7 @@ free -m
 - In live server don't ever run ```composer update```
 - Run composer update on the dev/staging/local environment 
 or somewhere else having same os and configurations. 
+
 - upload the composer.lock file driectly, or using version control(git), to production(live server)
 - run ```composer install``` on the  production(live server)
 
